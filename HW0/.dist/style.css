@@ -1,0 +1,64 @@
+.page {
+    border: 30px solid #ffffff;
+}
+h1 { 
+    text-align: center;
+    font-size: 45px;
+    font-weight: bold;
+    color: rgba(1, 106, 1, 0.942);
+    font-family: 'Bai Jamjuree', sans-serif;
+    text-shadow: 2px 2px 2px rgb(190, 190, 190);
+    
+}
+h3 {
+    font-size: 20px;
+    font-family: 'Bai Jamjuree', sans-serif;
+    color: #000000;
+    line-height: 30px;
+}
+h6 {
+    font-family: 'Bai Jamjuree', sans-serif;
+    color: #626465;
+    font-size: 10px;
+}
+h5 {
+    font-family: 'Bai Jamjuree', sans-serif;
+    color: #626465;
+    font-size: 20px;
+    text-align: right;
+}
+
+.flexbox {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    margin-left: -5px;
+    margin-right: -5px;
+
+}
+.content {
+    background-color: rgb(255, 255, 255);
+    border: 5px solid rgba(136, 218, 142, 0.687);
+    padding: 2px;
+    text-align: center;
+    
+}
+
+.item {
+    display: block;
+    box-sizing: border-box;
+    width: 33.33%;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 10px;
+
+}
+
+img {
+    object-fit: cover;
+    width: 90%;
+    height: 270px;
+}
