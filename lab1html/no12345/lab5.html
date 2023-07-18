@@ -11,32 +11,37 @@
               border-collapse: collapse;
               text-align: center;
             }
-            /* tr:nth-child(even) {
+            tr:nth-child(odd){
+              background-color: gainsboro;
+            }
+            tr:nth-child(even){
               background-color: lightgray;
             }
-            tr:first-child{
-              background-color: lightgray;
-            } */
+            th {
+              background-color: silver;
+            }
+            
             
             </style>
     </head>
     <body>
       <h1>Planets data</h1>
       <p>Data about the planets of our solar system (Planetary facts taken from <a href="https://nssdc.gsfc.nasa.gov/planetary/factsheet/">Nasa's Planetary Fact Sheet - Metric</a>).</p>
-        <table>
+        <table >
           <colgroup>
             <col span="2">
             <col span="1" style="border-style:solid;">
           </colgroup>
+          
             <tr>
-                <th colspan="2"></th>
+                <td colspan="2"></td>
                 <th>Name</th>
                 <th>Mass(10<sup>24</sup>kg)</th>
                 <th>Diameter(km)</th>
                 <th>Density(kg/m<sup>3</sup>)</th>
                 <th>Gravity(m/s<sup>2</sup>)</th>
                 <th>Lenth of day(hours)</th>
-                <th>Distance from sun(10<sup>6</sup>)</th>
+                <th>Distance from sun(10<sup>6</sup> km)</th>
                 <th>Mean temperature(&#8451;)</th>
                 <th>Number of moons</th>
                 <th>Notes</th>
@@ -90,6 +95,7 @@
                 <td>2</td>
                 <td>The red planet</td> 
               </tr>
+    
               <tr>
                 <th rowspan="4">Jovian planets</th>
                 <th rowspan="2">Gas giants</th>
@@ -105,6 +111,7 @@
                 <td>The largest planet</td>
               </tr>
               <tr>
+                
                 <th>Saturn</th>
                 <td>568</td>
                 <td>120,536</td>
