@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Lab2_1</title>
+    <style type="text/css">
+        input:invalid{
+            border:red solid 3px;
+        }
+        input,
+        input:valid {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <form action="form-echo.php" method="get">
+        <h3>1.ชื่อเต็ม/ย่อของสาขาวิชา</h3>
+        <select name="1.">
+            <option value="">--Please choose an option--</option>
+            <option value="CS">Computer Science / CS</option>
+            <option value="IC">Industrial Chemistry / IC</option>
+            <option value="MA">Mathematics with Computer Science / MA</option>
+            <option value="IMI">Industrial Physics and Medical Instrumentation / IMI</option>
+            <option value="AS">Applied Statistics / AS</option>
+            <option value="FT">Food Science and Technology / FT</option>
+        </select>
+
+        <h3>2.จำนวนเงินที่จะโอน</h3>
+        <label for="tranfer">Transfer payment</label>
+        <input 
+            type="number"
+            id="tranfer"
+            name="2."
+            size="100"
+            step="0.01"
+            min="0.01" 
+            max="100000" />
+        
+        <h3>3.อาหารที่ชื่นชอบ 5 ชนิดจากมากไปน้อย</h3>
+        1. <input type="text" name="1." id="likenumber1"><br>
+        2. <input type="text" name="2." id="likenumber2"><br>
+        3. <input type="text" name="3." id="likenumber3"><br>
+        4. <input type="text" name="4." id="likenumber4"><br>
+        5. <input type="text" name="5." id="likenumber5"><br>
+
+
+        <h3>4.ค่าไฟฟ้า 3 เดือนที่ผ่านมา</h3>
+        <div>
+            
+            <label for="month1">Electricity charge last month:</label> 
+            <input type="month" name="month1" id="month1" min="2020-03" value="2023-06">
+            <input 
+                type="number" 
+                name="month1"
+                id="month1"
+                step="0.001"
+                min="10.000" />
+        </div>
+        <div>
+            <label for="month2">Electricity charge 2 months ago:</label>
+            <input  type="month" name="month1" id="month2" min="2020-03" value="2023-05">
+            <input 
+                type="number" 
+                name="month2"
+                id="month2"
+                step="0.001"
+                min="10.000" />
+        </div>
+        <div>
+            <label for="month3">Electricity charge 3 months ago:</label>
+            <input type="month" name="month3" id="month3" min="2020-03" value="2023-04">
+            <input 
+                type="number" 
+                name="month3"
+                id="month3"
+                step="0.001"
+                min="10.000" />
+        </div>
+        
+        <h3>5.รหัสบัตรประชาชน</h3>
+        <input
+            type="text";
+            name="5"
+            placeholder="x-xxxxx-xxxxx-xx-x"
+            pattern="[1-9]\d{12}">
+
+        <h3>6.ความพึงพอใจของหนังสือเล่มนี้</h3>
+        <div>
+            <input type="radio" id="Choice1" name="contact" value="3" />
+            <label for="Choice1">พอใจมาก</label>
+            <input type="radio" id="Choice2" name="contact" value="2" />
+            <label for="Choice2">ปานกลาง</label>
+            <input type="radio" id="Choice3" name="contact" value="1" />
+            <label for="Choice3">ไม่พอใจ</label>
+        </div>
+
+        <h3>7.อาการป่วย</h3>
+        <textarea 
+            cols="50"
+            rows="4"></textarea>
+
+        <h3>8.ในช่วง 3 เดือนที่ผ่านมาเคยได้รับวัคซีนหรือไม่</h3>
+        <div>
+            <input type="radio" id="Choice1" name="contact" value="yes" />
+            <label for="Choice1">เคย</label>
+            <input type="radio" id="Choice2" name="contact" value="no" />
+            <label for="Choice2">ไม่เคย</label>
+        </div>
+        <h3>9.รหัสผ่าน</h3>
+        <label for="userPassword">Password: </label>
+        <input
+            type="password";
+            name="5"
+            id="userPassword"
+            type="password"
+            pattern=".{4}">
+        <h3>10.เวลาเริ่มเข้าเรียนและสิ้นสุดการเรียน</h3>
+        <label for="starttime">Start time :</label>
+        <input
+            type="time";
+            name="starttime"
+            id="starttime"><br>
+        <label for="finishtime">Finish time :</label>
+        <input
+            type="time"
+            name="finishtime"
+            id="finishtime">
+        <h3>11.วันเวลาที่ต้องไปพบแพทย์</h3>
+        <label for="meeting-time">วันเวลาที่ต้องไปพบแพทย์:</label>
+        <input type="datetime-local" id="meeting-time"
+            name="meeting-time" value="2023-07-25T19:30"
+            min="2020-06-07T00:00" max="2023-12-14T00:00">
+    </form>
+</body>
