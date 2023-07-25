@@ -81,9 +81,9 @@
         <h3>5.รหัสบัตรประชาชน</h3>
         <input
             type="text";
-            name="5"
+            name="idnumber"
             placeholder="x-xxxxx-xxxxx-xx-x"
-            pattern="[1-9]\d{12}">
+            pattern="[1-9]\d{12}"/>
 
         <h3>6.ความพึงพอใจของหนังสือเล่มนี้</h3>
         <div>
@@ -96,9 +96,7 @@
         </div>
 
         <h3>7.อาการป่วย</h3>
-        <textarea 
-            cols="50"
-            rows="4"></textarea>
+        <textarea cols="50" rows="4"></textarea>
 
         <h3>8.ในช่วง 3 เดือนที่ผ่านมาเคยได้รับวัคซีนหรือไม่</h3>
         <div>
@@ -111,10 +109,11 @@
         <label for="userPassword">Password: </label>
         <input
             type="password";
-            name="5"
+            name="password"
             id="userPassword"
             type="password"
-            pattern=".{4}">
+            pattern=".{4,}"
+            title="Password should 4 or more letters. e.g. john">
         <h3>10.เวลาเริ่มเข้าเรียนและสิ้นสุดการเรียน</h3>
         <label for="starttime">Start time :</label>
         <input

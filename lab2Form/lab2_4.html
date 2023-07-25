@@ -25,15 +25,18 @@
         <p><label>กรอกชื่อด้วยภาษาอังกฤษ อักขระตัวใหญ่เท่านั้น:</label>
             <input
                 type="text"
-                name="order"
+                name="username"
                 placeholder="TAKSAPORN YANSUNGWORN"
-                pattern="[A-Z]"></p>
+                pattern="[A-Z]"
+                style="width: 30%;"
+                title="Username should only contain uppercase letters. e.g. JOHN"></p>
         <p><label>รหัสนักศึกษา:</label>
         <input
             type="text"
             name="studentid"
             placeholder="xx-xxxxxx-xxxx-x"
-            pattern="[3-6]\d-\d{6}-\d{4}-\d"></p>
+            pattern="[3-6]\d-\d{6}-\d{4}-\d"
+            title="StudentID e.g. 64-040626-3037-6"></p>
         <p><label>บ้านเลขที่:</label>
         <input
             type="text"
@@ -44,7 +47,9 @@
         <input
             type="text"
             name="order"
-            placeholder="AAA89"></p>
+            placeholder="AAA89"
+            pattern="[A-Z]{3}\d{2}"
+            title="Order should only contain 3 uppercase letters and 2 number. e.g. ABC23"></p>
         <p><label>กรอกชื่อด้วยภาษาไทยเท่านั้น:</label>
             <input
                 type="text"
