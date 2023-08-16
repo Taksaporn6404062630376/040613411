@@ -1,0 +1,41 @@
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<style>
+		header {
+			background-color: black;
+			color: white;
+			text-align: center;
+		}
+		nav {
+			background-color: gainsboro;
+		}
+		aside {
+			background-color: cornflowerblue;
+		}
+		section { 
+			display: flex; 
+		}
+		@media screen and (max-width : 480px) {
+			section { display: block; }
+			header { width: auto; }
+			nav { width: auto; }
+			aside { width: auto; }
+		}
+		@media screen and (min-width : 481px) {
+			section { display: flex;
+				font-size: 1em; }
+			header { width: 30%; }
+			nav { width: 60%; }
+			aside { width: 10%; }
+		}
+	</style>
+</head>
+<body>
+	<section>
+		<header>Menu1<br>Menu2<br>Menu3<br></header>
+		<nav>In publishing, art, and communication, … as speech, writing or any of various arts".</nav>
+		<aside>advertising<br>advertising<br>advertising<br></aside>
+    </section>
+</body>
+</html>
