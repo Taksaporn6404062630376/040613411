@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<header>
+    <title>Adjacent sibling selector</title>
+    <meta charset="utf-8">
+    <style>
+        h1+p {
+            font-weight: bolder;
+            text-decoration: underline;
+            color: blue;
+        }
+        p+p {
+            background-color: chartreuse;
+        }
+    </style>
+</header>
+<body>
+    <div class="container">
+        <h1>Head topic</h1>
+        <p class="first">First element</p>
+        <p class="next">Adjacent sibling 1</p>
+        <p class="next">Adjacent sibling 2</p>
+        <p class="next">Adjacent sibling 3</p>
+        <h2>Conclusion</h2>
+        <p class="next">Adjacent sibling 4</p>
+        <p class="next">Adjacent sibling 2</p>
+        <p class="next">Adjacent sibling 3</p>
+    </div>
+</body>

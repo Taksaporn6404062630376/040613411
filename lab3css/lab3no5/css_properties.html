@@ -47,8 +47,8 @@
       text-decoration: none;
     }
     /* 2. จากข้อที่ 1.จงหาตัวอย่างการใช้งาน Selector ชนิดนี้มาแสดงและอธิบายประกอบ 
-    จากตัวอย่างจะเห็นว่า tag th ที่เลือกจะไม่ได้ ลงสีเหลืองทั้งหมด แต่จะลงเฉพาะ elements ที่อยู่ถัดจากตัวที่เลือก โดยถ้าเลือก tag ถัดไปเป็นตัวเดียวกัน element หลังจากตัวนั้นจะถูกเลือกทั้งหมด
-    แต่ถ้าเลือก tag ต่างกัน elements ถัดไปจะถูกใช้แค่ 1 element แต่ถ้าต้องการได้มากกว่า 1 ควรใช้สัญลักษณ์ ~ แทน +*/
+    จากตัวอย่างจะเห็นว่า tag th ที่เลือกจะไม่ได้ ลงสีเหลืองทั้งหมด แต่จะลงเฉพาะ element ที่อยู่ถัดจากตัวที่เลือก โดยถ้าเลือก tag ถัดไปเป็นตัวเดียวกัน elements หลังจากตัวนั้นจะถูกเลือกทั้งหมด
+    แต่ถ้าเลือก tag ต่างกัน element ถัดไปจะถูกเลือกแค่ 1 element แต่ถ้าต้องการได้มากกว่า 1 ควรใช้สัญลักษณ์ ~ แทน +*/
     th+th {
       background-color: yellow;
     }
@@ -58,12 +58,7 @@
 <h1>Common CSS Properties</h1>
 
 <h2>Background</h2>
-<p>Adjacent Sibling Selector 5</p>
-<p>Adjacent Sibling Selector 6</p>
-<p>Adjacent Sibling Selector 5</p>
-<p>Adjacent Sibling Selector 6</p>
-<p>Adjacent Sibling Selector 5</p>
-<p>Adjacent Sibling Selector 6</p>
+
 <p>
 Cascading Style Sheets describe the appearance of structured documents, usually
 written in <a href="http://en.wikipedia.org/wiki/HTML">HTML</a>.  The current
@@ -76,7 +71,7 @@ web site to follow what is going on with CSS 3 is
 
 <table>
 <tr>
-  <td>Property</td>
+  <th>Property</th>
   <th>Values</th>
   <th>Used with Elements</th>
 </tr>
