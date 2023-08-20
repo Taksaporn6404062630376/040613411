@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script>
+      function addNumbers() {
+            let num1 = parseFloat(document.getElementById("n1").value);
+            let num2 = parseFloat(document.getElementById("n2").value);
+            let answer = num1+num2;
+            // document.getElementById("ans").innerHTML = answer;
+            document.getElementById("ans").value = answer;
+        }
+    </script>
+  </head>
+      <input type="number" id="n1" >+
+      <input type="number" id="n2">=
+      <input type="text" id="ans">
+      <input type="submit" value="Go go" onclick="addNumbers()">
+  </body>
+</html>

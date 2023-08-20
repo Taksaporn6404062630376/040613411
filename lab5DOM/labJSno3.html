@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <script>
+        let student = [
+        {
+                fullname: 'นายตั้งใจ เรียนมาก',
+                age: 18,
+                year: 1,
+                gpa: 3.40,
+                help: true
+            },
+            {
+                fullname: 'นายส่งงาน ตลอดมา',
+                age: 19,
+                year: 2,
+                gpa: 3.00,
+                help: false
+            },
+            {
+                fullname: 'นางสาวใส่ใจ ดีงาม',
+                age: 20,
+                year: 3,
+                gpa: 2.90,
+                help: true
+            },
+            {
+                fullname: 'นายศึกษา ค้นคว้า',
+                age: 21,
+                year: 4,
+                gpa: 3.50,
+                help: true
+            },
+            {
+                fullname: 'นางสาวสมหมาย ใจดี',
+                age: 18,
+                year: 1,
+                gpa: 3.10,
+                help: false
+            },
+            {
+                fullname: 'นายกล้าหาญ ชาญชัย',
+                age: 19,
+                year: 2,
+                gpa: 2.50,
+                help: true
+            },
+            {
+                fullname: 'นางสาวดอกไม้ กลิ่นหอม',
+                age: 21,
+                year: 3,
+                gpa: 2.75,
+                help: true
+            },
+            {
+                fullname: 'นางสาวพรรณนี วิทยา',
+                age: 20,
+                year: 2,
+                gpa: 3.60,
+                help: false
+            }
+        ];
+
+
+        for (let year = 1; year <= 4; year++) {
+            let scholarshipReceived = false;
+
+            console.log('ชั้นปีที่ ' + year);
+            for (let i = 0; i < student.length; i++) {
+                if (student[i].year === year && student[i].gpa >= 3.20) {
+                    console.log(student[i].fullname + ' เนื่องจากเกรดเฉลี่ยถึงเกณฑ์และยังช่วยงานภาควิชา');
+                    scholarshipReceived = true;
+                } else if (student[i].year === year && student[i].year >= 2 && student[i].help && student[i].gpa >= 2.75) {
+                    console.log(student[i].fullname + ' เนื่องจากเกรดเฉลี่ยถึงเกณฑ์และยังช่วยงานภาควิชา');
+                    scholarshipReceived = true;
+                }
+            }
+
+            if (!scholarshipReceived) {
+                console.log('ไม่มี');
+            }
+
+            console.log('\n');
+        }
+        
+    </script>
+</head>
+</html>

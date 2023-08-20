@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+        function changeColor(element) {
+            if (element.value.trim() !== "") {
+                element.style.color = "green";
+            } else {
+                element.style.color = "black";
+            }
+        }
+        </script>
+    </head>
+    <body>
+        <h1>Register</h1>
+        Name: <input type="text" id="name" onblur="changeColor(this)"><br>
+        Age: <input type="number" id="age" onblur="changeColor(this)"><br>
+        Birthdate: <input type="date" id="birthdate" onblur="changeColor(this)"><br>
+    </body>
+</html>

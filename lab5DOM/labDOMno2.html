@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Noname1</title>
+        <meta charset="utf-8">
+        <script>
+          function calculate() {
+                let num1 = parseFloat(document.getElementById("n1").value);
+                let num2 = parseFloat(document.getElementById("n2").value);
+                let selectedOperator = document.getElementById("operator").value;
+                let result;
+                
+                if (selectedOperator === "add") {
+                    result = num1 + num2;
+                } else if (selectedOperator === "subtract") {
+                    result = num1 - num2;
+                } else if (selectedOperator === "multiply") {
+                    result = num1 * num2;
+                } else if (selectedOperator === "divide") {
+                    result = num1 / num2;
+                }
+                
+                document.getElementById("ans").value = result;
+                console.log(result);
+            }
+        </script>
+      </head>
+      <body>
+        <input type="number" id="n1" >
+          <select id="operator" name="operator">
+            <option value="add">+</option>
+            <option value="subtract">-</option>
+            <option value="multiply">*</option>
+            <option value="divide">/</option>
+          </select>
+          <input type="number" id="n2">=
+          <input type="text" id="ans">
+          <input type="button" value="Compute" onclick="calculate()">
+      </body>
+</html>
