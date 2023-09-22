@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Form pattern attributes testing</title>
+    <style type="text/css">
+        input:invalid{
+            border:red solid 3px;
+        }
+        input,
+        input:valid {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1>Form pattern attributes testing</h1><hr>
+    <form action="form-echo.php" method="get">
+    Slide 33 Example :
+    <input
+        type="text";
+        name="username"
+        placeholder="aaaa"
+        pattern="[a-z]{1,15}"
+        title="Username should only contain lowercase letters. e.g. john">
+    
+    <h3>1.เป็นสระในภาษาอังกฤษเท่านั้นและมีได้ 3 ตัว</h3>
+    <input
+        type="text";
+        name="1"
+        placeholder="3 english only"
+        pattern="[AaEeIiOoUu]{3}">
+    <h3>2.ขึ้นต้นด้วยตัวพิมพ์ใหญ่ ที่เหลือเป็นอักษรพิมพ์เล็กตั้งแต่ 1 ตัวขึ้นไป</h3>
+    <input
+        type="text";
+        name="2"
+        placeholder="Xx..."
+        pattern="[A-Z][a-z]+">
+    <h3>3.ขึ้นต้นด้วย ord หรือ order ลงท้ายด้วยตัวเลข 5 ตัว</h3>
+    <input
+        type="text";
+        name="3"
+        placeholder="ord/ordernnnnnn"
+        pattern="(^ord|^order)[A-Za-z]*\d{5}">
+    <h3>4.เป็นคำว่า frog หรือ blog หรือ clog เท่านั้น</h3>
+    <input
+        type="text";
+        name="4"
+        placeholder="frog/blog/clog"
+        pattern="(frog|blog|clog)+">
+    <h3>BONUS. เป็นรหัสนักศึกษา cs เท่านั้น</h3>
+    <input
+        type="text";
+        name="5"
+        placeholder="xx-xxxxxx-xxxx-x"
+        pattern="[1-6]\d040626\d{5}">
+    
+    <p><input type="submit" value="Submit"></p>
+    </form>
+</body>
